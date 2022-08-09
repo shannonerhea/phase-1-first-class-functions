@@ -33,4 +33,13 @@
 // console.log(Monday);
 
 
-function returnsANamedFunction() {};
+function receivesAFunction(callback) {
+    callback();
+};
+function returnsANamedFunction() {
+    return function anyNamedFunction() {};
+    //return anyNamedFunction = () => {};
+};
+function returnsAnAnonymousFunction() {
+    return function() {};
+};
